@@ -1,0 +1,27 @@
+.inputSearch {
+  width: 90%;
+  margin-left: 5%;
+  height: 40px;
+  padding: 1%;
+  background-color: antiquewhite;
+  border: grey solid 0.5px;
+  display: flex;  
+ 
+  img {
+    background-color: antiquewhite;
+    padding: 3%;
+  }
+}
+
+
+.mainInputNotBorder{
+    background-color: antiquewhite;
+    width: 100%;
+    border-color: transparent;
+    outline: transparent;   
+   
+}
+
+.mainInputNotBorder :focus{
+    background-color: blue;
+}

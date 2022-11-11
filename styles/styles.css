@@ -1,0 +1,170 @@
+* {
+  background-color: #82F1F1;
+}
+
+.styledForm {
+  width: 50%;
+}
+.styledForm h5 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  font-style: bold;
+  font-size: larger;
+}
+
+.formInputNotBorder {
+  background-color: antiquewhite;
+  border: #808090 0.5px solid;
+  min-width: 298px;
+  min-height: 38px;
+}
+
+.loginButton {
+  padding: 3%;
+  margin: 5%;
+  min-width: 300px;
+  min-height: 40px;
+  background-color: #F4236C;
+  border-style: none;
+  color: antiquewhite;
+}
+
+.formatImg {
+  border-radius: 50%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 10%;
+  width: 40%;
+  margin-top: 10%;
+}
+
+.loginFooterFixed {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.footerParagraphLeft {
+  color: #63688E;
+  justify-self: flex-start;
+  width: 50%;
+  text-align: left;
+}
+
+.footerParagraphRight {
+  color: #F4236C;
+  justify-self: flex-end;
+  width: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.logo {
+  width: 5%;
+  border-radius: 50%;
+  padding: 1%;
+  margin-top: 2%;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.headerLinksHovered {
+  padding: 2%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #63688E;
+}
+
+.headerLinksHovered:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.burgerBox {
+  display: none;
+}
+
+.closeButton {
+  background-color: #82F1F1;
+}
+
+@media screen and (max-width: 321px) {
+  .navLinks {
+    display: none;
+  }
+  .logo {
+    min-width: 20%;
+  }
+  .navLinksMovile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+  }
+  .navLinksMovile a {
+    padding-top: 10%;
+    border-bottom: 2px solid #63688E;
+    font-size: larger;
+    font-weight: 600;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .burgerButton {
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    position: relative;
+    left: 40px;
+  }
+  .burgerBox {
+    display: flex;
+    justify-content: end;
+  }
+}
+.inputSearch {
+  width: 90%;
+  margin-left: 5%;
+  height: 40px;
+  padding: 1%;
+  background-color: antiquewhite;
+  border: grey solid 0.5px;
+  display: flex;
+}
+.inputSearch img {
+  background-color: antiquewhite;
+  padding: 3%;
+}
+
+.mainInputNotBorder {
+  background-color: antiquewhite;
+  width: 100%;
+  border-color: transparent;
+  outline: transparent;
+}
+
+.mainInputNotBorder :focus {
+  background-color: blue;
+}/*# sourceMappingURL=styles.css.map */
