@@ -30,7 +30,7 @@ $row = mysqli_fetch_array($query)
             <h3>Crear publicación</h3>
 
 
-            <form class="styledForm" method="POST" action="postPublication.php">
+            <form class="styledForm" method="POST" enctype="multipart/form-data" action="postPublication.php">
 
                 <label for="title" class="form-label">Titulo</label>
                 <input type="text" name="titulo" id="title" placeholder="name@example.com">
@@ -38,10 +38,10 @@ $row = mysqli_fetch_array($query)
                 <label for="content" class="form-label">Contenido</label>
                 <textarea name="contenido" id="content" rows="3"></textarea>
                 
-                <label for="file" >Inserte su imagen aquí</label>
-                <input type="file" name="imagen" id="file">
+                <label for="url" >Url de su imagen aquí:</label>
+                <input type="file" name="imagen" id="url">
 
-                <label for="usuario" class="form-label">Autor</label>
+                <label for="usuatextrio" class="form-label">Autor</label>
                 <input type="text" name="usuario" id="usuario" placeholder="Autor">
 
 
@@ -70,36 +70,6 @@ $row = mysqli_fetch_array($query)
 
     </div>
 
-<!--     <div>
-        <?php
-        while ($row = mysqli_fetch_array($query)) {
-        ?>
-
-        <h2>
-            <?php
-            echo $row['titulo']
-
-                ?>
-        </h2>
-        <h5>
-            <?php
-            echo $row['usuario']
-                ?>
-        </h5>
-        <img href=<?php echo $row['imagen'] ?>/>
-        <p>
-            <?php
-            echo $row['contenido']
-                ?>
-        </p>
-
-
-
-
-        <?php
-        }
-        ?>
-    </div> -->
 </body>
 
 </html>

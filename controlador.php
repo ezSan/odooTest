@@ -10,7 +10,7 @@ if (!empty($_POST["loginBtn"])) {
         $sql = conectar()->query("SELECT * from usuarios where usuario='$usuario' and contraseña='$contraseña'");
 
         if ($datos = $sql->fetch_object()) {
-            header("location:landing.php");
+            header("location:publicaciones.php");
         } else {
             echo "ACCESO DENEGADO";
         }

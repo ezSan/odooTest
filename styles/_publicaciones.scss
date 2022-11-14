@@ -1,27 +1,48 @@
 .inputSearch {
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 40px;
   padding: 1%;
   background-color: antiquewhite;
   border: grey solid 0.5px;
-  display: flex;  
- 
+  display: flex;
+
   img {
     background-color: antiquewhite;
     padding: 3%;
   }
 }
 
-
-.mainInputNotBorder{
-    background-color: antiquewhite;
-    width: 100%;
-    border-color: transparent;
-    outline: transparent;   
-   
+.mainInputNotBorder {
+  background-color: antiquewhite;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-color: transparent;
+  outline: transparent;
 }
 
-.mainInputNotBorder :focus{
-    background-color: blue;
+
+.publicaciones{
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+  text-align: start;
 }
+
+
+.article{
+  width: 80%;
+  
+  h4{
+    padding: 2%;
+  }
+
+  p{
+    margin-top: 5%;
+  }
+}
+
+

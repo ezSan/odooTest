@@ -1,3 +1,14 @@
+<?php
+include("conexion.php");
+$con = conectar();
+
+$sql = "SELECT * FROM publicaciones";
+$query = mysqli_query($con, $sql);
+/* $row = mysqli_fetch_array($query) */
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,11 +44,52 @@
 
     <main id="main">
         <div class="inputSearch">
+
             <img src="./assets/lupa.svg" width="20px">
-            <input type="text" placeholder="Busca tu publicación aquí" class="mainInputNotBorder" >
+            <input type="text" placeholder="Busca tu publicación aquí" class="mainInputNotBorder">
             </input>
         </div>
 
+        <section class="publicaciones">
+
+            <?php
+            while ($row = mysqli_fetch_array($query)) {
+            ?>
+            <article class="article">
+
+                <h4>
+                    <?php
+                echo $row['titulo']
+
+                        ?>
+                </h4>
+                
+
+                <img src="<?php
+                 echo substr ($row['imagen'],2)
+
+                        ?>">
+
+                <p>
+                    <?php
+                echo $row['contenido']
+                        ?>
+                </p>
+
+            </article>
+
+
+
+
+
+
+            <?php
+            }
+            ?>
+
+
+
+        </section>
     </main>
 
 
