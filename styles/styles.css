@@ -1,4 +1,4 @@
-* {
+body {
   background-color: #82F1F1;
 }
 
@@ -90,6 +90,7 @@ header {
   font-size: 24px;
   font-weight: 500;
   color: #63688E;
+  text-decoration: none;
 }
 
 .headerLinksHovered:hover {
@@ -170,17 +171,114 @@ header {
 
 .publicaciones {
   width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
   text-align: start;
 }
 
+.articleImage {
+  width: 100%;
+}
+
 .article {
+  margin-left: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.publicationH4Title {
+  font-size: 3em;
+}
+
+.likeArticle {
+  width: 20px;
+}
+
+.createTitleCentered {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.styledForm {
   width: 80%;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-.article h4 {
+.styledForm label {
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+.inputFile {
+  display: none;
+}
+
+.inputFileLabel {
+  background-color: #F4236C;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   padding: 2%;
+  margin-top: 4%;
 }
-.article p {
+.inputFileLabel .camera {
+  width: 10%;
+  color: antiquewhite;
+  background-color: #F4236C;
+  font-weight: 500;
+  font-size: medium;
+  padding: 0.5%;
+}
+
+.inputText {
+  margin: 3%;
+  text-align: center;
+}
+
+.postButton {
+  padding: 3%;
   margin-top: 5%;
+  min-width: 100%;
+  min-height: 40px;
+  background-color: #F4236C;
+  border-style: none;
+  color: black;
+  font-weight: 500;
+  font-size: medium;
+}
+
+footer {
+  width: 100%;
+  margin-top: 0.5%;
+  display: flex;
+  height: 5%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.footerSearch {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #F4236C;
+  margin-top: 1%;
+}
+.footerSearch img {
+  width: 25px;
+}
+
+.footerSave {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+}
+.footerSave img {
+  width: 25px;
 }/*# sourceMappingURL=styles.css.map */

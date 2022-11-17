@@ -23,26 +23,27 @@
   outline: transparent;
 }
 
-
-.publicaciones{
+.publicaciones {
   width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  
   text-align: start;
 }
 
-
-.article{
-  width: 80%;
-  
-  h4{
-    padding: 2%;
-  }
-
-  p{
-    margin-top: 5%;
-  }
+.articleImage {
+  width: 100%;
 }
 
+.article {
+  margin-left: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.publicationH4Title {
+  font-size: 3em;
+}
+
+
+.likeArticle{
+  width: 20px;
+}
 

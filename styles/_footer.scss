@@ -1,0 +1,35 @@
+footer {
+  width: 100%; 
+  margin-top: 0.5%;
+  display: flex;
+  height: 5%;
+  justify-content: space-evenly;
+  align-items:center;
+  background-color: aliceblue;    
+}
+
+
+.footerSearch{
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $colorSecundario;
+    margin-top: 1%;
+    img{
+        width: 25px;
+    }
+    
+}
+
+.footerSave{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    img{
+        width: 25px
+    }
+}

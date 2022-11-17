@@ -2,7 +2,7 @@
     include("conexion.php");
     $con=conectar();
     
-    $usuario=$_POST['usuario'];
+    
     $contenido=$_POST['contenido'];    
     $titulo=$_POST['titulo'];
 
@@ -22,7 +22,7 @@
     }
 
 
-    $sql="INSERT INTO publicaciones VALUES('$usuario', '$contenido','$destino', '$titulo')";
+    $sql="INSERT INTO publicaciones VALUES(null,'$contenido','$destino', '$titulo')";
     $query= mysqli_query($con,$sql);
 
 ?>

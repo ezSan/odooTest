@@ -18,6 +18,7 @@ $query = mysqli_query($con, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    
 
     <title>UsuarioAutorizado</title>
 </head>
@@ -30,13 +31,13 @@ $query = mysqli_query($con, $sql);
 
 
         <div class="burgerBox">
-            <!-- <img src="./assets/close.svg" alt="closBurguerMenu"  id="closeBurger" class="burgerButton"> -->
             <img src="./assets/burger.svg" alt="burguerMenu" id="burgerButton" class="burgerButton">
         </div>
 
 
         <nav class="navLinks" id="navLinks">
             <a class="headerLinksHovered">Personal Information</a>
+            <a href="create.php" class="headerLinksHovered">Crear publicación + </a>
             <a class="headerLinksHovered">♥ Saved</a>
         </nav>
 
@@ -55,33 +56,31 @@ $query = mysqli_query($con, $sql);
             <?php
             while ($row = mysqli_fetch_array($query)) {
             ?>
-            <article class="article">
 
-                <h4>
+            <article class="article">
+                <h4 class="publicationH4Title">
                     <?php
                 echo $row['titulo']
-
                         ?>
                 </h4>
-                
-
                 <img src="<?php
-                 echo substr ($row['imagen'],2)
-
-                        ?>">
-
+                echo substr($row['imagen'], 2)
+                    ?>" class="articleImage">
                 <p>
                     <?php
                 echo $row['contenido']
                         ?>
                 </p>
 
+                <button id="<?php
+                echo $row['id']
+                    ?>" class="btnLike">
+
+                    <img src="./assets/like.svg" class="likeArticle" />
+
+                </button>
+
             </article>
-
-
-
-
-
 
             <?php
             }
@@ -90,17 +89,28 @@ $query = mysqli_query($con, $sql);
 
 
         </section>
+
+
     </main>
+    <footer>
+        <div class="footerSearch">
+            <img src="./assets/pinkLupa.svg">
+            <p>Search</p>
+        </div>
 
+        <div class="footerSave">
+            <a href="saved.php">
 
-
-
-
-
+                <img src="./assets/like.svg">
+            </a>
+            <p>Saved</p>
+        </div>
+    </footer>
 
 
 
     <script src="./scripts/menuBurger.js"></script>
+    <script src="./scripts/like.js"></script>
 </body>
 
 </html>
