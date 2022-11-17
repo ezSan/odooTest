@@ -192,6 +192,15 @@ header {
   width: 20px;
 }
 
+.btnLike {
+  background-color: #82F1F1;
+  border-style: none;
+}
+
+.btnLike:hover {
+  filter: blur(0.1rem);
+}
+
 .createTitleCentered {
   text-align: center;
   margin-top: 3%;

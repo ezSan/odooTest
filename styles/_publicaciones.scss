@@ -47,3 +47,13 @@
   width: 20px;
 }
 
+
+.btnLike{
+  background-color: $colorPrincipal;
+  border-style: none;
+
+}
+
+.btnLike:hover{
+  filter: blur(0.1rem);
+}
