@@ -2,7 +2,7 @@
 
 if (!empty($_POST["loginBtn"])) {
     if (empty($_POST["usuario"]) and empty($_POST["contraseña"])) {
-        echo "LOS CAMPOS ESTAN VACIOS";
+        echo "<font color=\"red\">Los campos están vacios</font>";
     } else {
         $usuario=$_POST["usuario"];
         $contraseña=$_POST["contraseña"];        
@@ -11,8 +11,8 @@ if (!empty($_POST["loginBtn"])) {
 
         if ($datos = $sql->fetch_object()) {
             header("location:publicaciones.php");
-        } else {
-            echo "ACCESO DENEGADO";
+        } else {            
+            echo '<script language="javascript">alert("Acceso denegado");</script>';
         }
 
     }
