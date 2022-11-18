@@ -186,6 +186,14 @@ header {
 
 .publicationH4Title {
   font-size: 3em;
+  margin-bottom: 0.5%;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-top: 0.5%;
+  padding: 0;
 }
 
 .likeArticle {
@@ -290,4 +298,29 @@ footer {
 }
 .footerSave img {
   width: 25px;
+}
+
+.savedTitle {
+  color: #63688E;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.card img {
+  width: 80%;
+}
+.card h5 {
+  padding: 0;
+  margin: 0;
+  font-size: large;
+}
+.card p {
+  padding: 0;
+  margin: 0;
+  font-size: small;
 }/*# sourceMappingURL=styles.css.map */

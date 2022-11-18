@@ -4,7 +4,8 @@
     
     
     $contenido=$_POST['contenido'];    
-    $titulo=$_POST['titulo'];
+    $lugar=$_POST['lugar'];
+    $provincia=$_POST['provincia'];
 
     $nombre_imagen=$_FILES["imagen"]["name"];
     $nombre_temporal=$_FILES["imagen"]["tmp_name"];
@@ -22,7 +23,7 @@
     }
 
 
-    $sql="INSERT INTO publicaciones VALUES(null,'$contenido','$destino', '$titulo')";
+    $sql="INSERT INTO publicaciones VALUES(null,'$contenido','$destino', '$lugar', '$provincia')";
     $query= mysqli_query($con,$sql);
 
 ?>

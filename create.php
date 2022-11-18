@@ -31,7 +31,8 @@ $row = mysqli_fetch_array($query)
             <form class="styledForm" method="POST" enctype="multipart/form-data" action="postPublication.php">
 
                 
-                <input type="text" name="titulo" id="title" placeholder="Escriba el título de su publicacion" class="inputText">
+                <input type="text" name="lugar" id="title" placeholder="Nombre del lugar" class="inputText">
+                <input type="text" name="provincia" id="provincia" placeholder="Provincia donde se encuentra" class="inputText">
 
                 
                 <textarea name="contenido" id="content" rows="3" placeholder="Escriba el contenido de su publicacion" class="inputText"></textarea>

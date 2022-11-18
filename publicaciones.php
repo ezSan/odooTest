@@ -58,11 +58,22 @@ $query = mysqli_query($con, $sql);
             ?>
 
             <article class="article">
+
                 <h4 class="publicationH4Title">
                     <?php
-                echo $row['titulo']
+                echo $row['lugar']
                         ?>
                 </h4>
+
+                <h5 class="subtitle">
+                    <?php
+                echo $row['provincia']
+                        ?>
+                </h5>
+
+
+
+
                 <img src="<?php
                 echo substr($row['imagen'], 2)
                     ?>" class="articleImage">

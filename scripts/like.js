@@ -27,20 +27,21 @@ for(let i=0; i < btnLike.length ; i++){
     btnLike[i].addEventListener('click', (element)=>{
         
         let title = element.path[2].childNodes[1].innerText;
-        let img = element.path[2].childNodes[3].currentSrc;
-        let content = element.path[2].childNodes[5].innerText;
-         
-        console.log(title);
-        console.log(img);
-        console.log(content);
+        let subtitle = element.path[2].childNodes[3].innerText;
+        let img = element.path[2].childNodes[5].currentSrc;
+        let content = element.path[2].childNodes[7].innerText;   
+        
+        
 
-        let publicacionLikeada = {
-            title, img, content
+         let publicacionLikeada = {
+            title, img, content, subtitle
         }
-
+         
+        console.log(publicacionLikeada);
+        
 
         newArray.push(publicacionLikeada);
-        localStorage.setItem('Liked', JSON.stringify(newArray))     
+        localStorage.setItem('Liked', JSON.stringify(newArray)); 
 
 
 
