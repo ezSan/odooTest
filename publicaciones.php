@@ -94,7 +94,7 @@ $query = mysqli_query($con, $sql);
 
         <section class="publicaciones">
 
-            <h5 class="introText">En éste blog podrás encontrar información sobre diferntes lugares para hacer trekking
+            <h5 class="introText">En éste blog podrás encontrar información sobre diferentes lugares para hacer trekking
                 de la República Argentina. También podrás ayudarnos a crecer creando tu publicación para otros amantes
                 de la vida al aire libre. </h5>
 
