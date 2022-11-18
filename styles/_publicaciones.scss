@@ -88,3 +88,33 @@
 .btnLike:hover{
   filter: blur(0.1rem);
 }
+
+
+
+/* busquedas */
+
+.searchImg{
+  width: 60%;
+}
+
+.searchBox{
+  margin:2% 10% 2% 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2{
+    margin-bottom: 1%;
+  }
+
+  h5{
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  
+}
+
