@@ -73,7 +73,7 @@ header {
 }
 
 .logo {
-  width: 5%;
+  width: 30%;
   border-radius: 50%;
   padding: 1%;
   margin-top: 2%;
@@ -138,26 +138,36 @@ header {
     max-width: 30px;
     max-height: 30px;
     position: relative;
-    left: 40px;
+    /* left: 40px; */
   }
   .burgerBox {
     display: flex;
     justify-content: end;
   }
 }
-.inputSearch {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 40px;
-  padding: 1%;
-  background-color: antiquewhite;
-  border: grey solid 0.5px;
+.formPrincipal {
   display: flex;
-}
-.inputSearch img {
   background-color: antiquewhite;
-  padding: 3%;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.lupa {
+  width: 6%;
+  padding: 2%;
+}
+
+.butonWithBgImg {
+  background-color: antiquewhite;
+  color: transparent;
+  border-style: none;
+  padding: 1%;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/93/93642.png");
 }
 
 .mainInputNotBorder {
@@ -188,6 +198,7 @@ header {
   font-size: 3em;
   margin-bottom: 0.5%;
   padding: 0;
+  margin-top: 3%;
 }
 
 .subtitle {
@@ -198,6 +209,17 @@ header {
 
 .likeArticle {
   width: 20px;
+}
+
+.shareImg {
+  width: 20px;
+  background-color: #82F1F1;
+  padding: 2%;
+}
+
+.shareBtn {
+  background-color: #82F1F1;
+  border-style: none;
 }
 
 .btnLike {
@@ -268,7 +290,7 @@ header {
 
 footer {
   width: 100%;
-  margin-top: 0.5%;
+  margin-top: 1.5%;
   display: flex;
   height: 5%;
   justify-content: space-evenly;
@@ -308,17 +330,21 @@ footer {
 
 .likeadasBox {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .dinamicP {
   font-size: x-large;
   color: #63688E;
   font-weight: 500;
+  margin-left: 2%;
 }
 
 .card {
   width: 250px;
   height: 250px;
+  min-width: 250px;
+  min-height: 250px;
   text-align: center;
   position: relative;
 }

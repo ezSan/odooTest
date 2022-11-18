@@ -12,7 +12,12 @@
 
 <body>
     <header>
-        <img class="logo" src="./assets/quilsoft.jpg">
+
+        <a href="publicaciones.php">
+            <img src="./assets/quilsoft.jpg" href="publicaciones.php" class="logo">
+        </a>
+
+
         <div class="burgerBox">
             <img src="./assets/burger.svg" alt="burguerMenu" id="burgerButton" class="burgerButton">
         </div>
@@ -22,7 +27,7 @@
             <a class="headerLinksHovered">♥ Saved</a>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <h2 class="savedTitle" id='savedTitle'>Publicaciones guardadas</h2>
         <div id="likeadasBox" class="likeadasBox">
 

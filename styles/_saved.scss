@@ -6,6 +6,7 @@
 
 .likeadasBox{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -13,12 +14,15 @@
     font-size: x-large;
     color: $colorLinks;
     font-weight: 500;
+    margin-left: 2%;
 }
 
 
 .card{
     width:250px;
     height: 250px;
+    min-width:250px;
+    min-height: 250px;
     text-align: center;
     position: relative;    
     h5{
