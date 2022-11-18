@@ -30,7 +30,7 @@
     <h5>Password</h5>
     <input type="password" name="contraseña" class="formInputNotBorder">
 
-    <input type="submit" name="loginBtn" value="Sign In" class="loginButton">
+    <input type="submit" name="loginBtn" value="Login" class="loginButton">
 </form>
 
 <div class="loginFooterFixed">
