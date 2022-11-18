@@ -24,7 +24,7 @@
     </header>
     <main>
         <h2 class="savedTitle" id='savedTitle'>Publicaciones guardadas</h2>
-        <div id="likeadasBox">
+        <div id="likeadasBox" class="likeadasBox">
 
         </div>
 

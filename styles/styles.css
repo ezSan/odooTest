@@ -306,13 +306,21 @@ footer {
   text-align: center;
 }
 
+.likeadasBox {
+  display: flex;
+}
+
+.dinamicP {
+  font-size: x-large;
+  color: #63688E;
+  font-weight: 500;
+}
+
 .card {
   width: 250px;
   height: 250px;
   text-align: center;
-}
-.card img {
-  width: 80%;
+  position: relative;
 }
 .card h5 {
   padding: 0;
@@ -323,4 +331,16 @@ footer {
   padding: 0;
   margin: 0;
   font-size: small;
+}
+
+.cardImg {
+  width: 80%;
+  height: 60%;
+}
+
+.cardLike {
+  width: 10%;
+  position: absolute;
+  top: 2%;
+  left: 12%;
 }/*# sourceMappingURL=styles.css.map */
