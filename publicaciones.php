@@ -51,33 +51,47 @@ $query = mysqli_query($con, $sql);
             <a name='anchor'></a>
             <input type="text" placeholder="Busca tu publicación aquí" class="mainInputNotBorder" name="busqueda">
             </input>
-            <!-- <input type="image" src="./assets/lupa.svg" class="lupa" name="enviar" /> -->
             <input type="submit" name="enviar" class="butonWithBgImg" />
         </form>
+        <div class="searchBox">
+            <?php
 
-        <?php
+            if (isset($_GET['enviar'])) {
+                $busqueda = $_GET['busqueda'];
 
-        if (isset($_GET['enviar'])) {
-            $busqueda = $_GET['busqueda'];
+                $consulta = $con->query("SELECT * FROM publicaciones WHERE provincia OR contenido LIKE '%$busqueda%'");
+            ?>
+            <?php
+                while ($row = $consulta->fetch_array()) {
+            ?>
 
-            $consulta = $con->query("SELECT * FROM publicaciones WHERE provincia LIKE '%$busqueda%'");
+            <h2>
+                <?php echo $row['lugar'] ?>
+            </h2>
+            <h5>
+                <?php echo $row['provincia'] ?>
+            </h5>
+            <p>
+                <?php echo $row['contenido'] ?>
+            </p>
 
-            while ($row = $consulta->fetch_array()) {
+            <img class="searchImg" src="<?php echo $row['imagen'] ?>">
 
 
-                echo $row['provincia'] . '<br>';
+            <?php
+
+                }
+            ?>
+
+
+            <?php
             }
 
 
+            ?>
 
 
-        }
-
-
-        ?>
-
-
-
+        </div>
 
 
         <section class="publicaciones">
@@ -106,6 +120,7 @@ $query = mysqli_query($con, $sql);
                 <img src="<?php
                 echo substr($row['imagen'], 2)
                     ?>" class="articleImage">
+
                 <p>
                     <?php
                 echo $row['contenido']
