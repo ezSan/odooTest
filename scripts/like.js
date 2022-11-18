@@ -1,20 +1,21 @@
 
+let oldLikes = [];
 
+let savedArticles = JSON.parse(localStorage.getItem('Liked'));
 
-let savedArticles = localStorage.getItem('Liked');
-let newArray = []
 
 const setStorage =()=>{
     savedArticles
-    ? getDataAndPushInArray()
+    ? oldLikes = [...savedArticles]
     : console.log ('No hay nada Likeado')
 }
 
-let getDataAndPushInArray =()=>{
-    let oldLikes = [JSON.parse(savedArticles)]
-    newArray = [...oldLikes];
-    console.log(newArray)
-}
+// let getDataAndPushInArray =()=>{
+//     let oldLikes = JSON.parse(savedArticles);
+//     newArray = [...oldLikes];
+//     /* newArray = [...oldLikes];
+//     console.log(newArray) */
+// }
 
 document.addEventListener('DOMContentLoaded', setStorage)
 
@@ -40,8 +41,8 @@ for(let i=0; i < btnLike.length ; i++){
         console.log(publicacionLikeada);
         
 
-        newArray.push(publicacionLikeada);
-        localStorage.setItem('Liked', JSON.stringify(newArray)); 
+        oldLikes.push(publicacionLikeada);
+        localStorage.setItem('Liked', JSON.stringify(oldLikes)); 
 
 
 
