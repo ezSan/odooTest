@@ -9,9 +9,7 @@ $contraseña=$_POST['contraseña'];
 $sql = "INSERT INTO usuarios VALUES(null,'$usuario', '$contraseña') ";
 $query = mysqli_query($con, $sql);
 
-if($query){
-    
+if($query){    
     Header("Location: index.php");
 }
-
     ?>

@@ -37,9 +37,11 @@
     <p class="footerParagraphLeft">
        Forgot Password?
     </p>
-    <p class="footerParagraphRight">
+    <a href="userCreate.php" class="footerParagraphRight">
+    <p>
        Sign Up 
     </p>
+    </a>
 </div>
 
 </body>

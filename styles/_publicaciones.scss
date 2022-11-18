@@ -1,28 +1,31 @@
-
-.formPrincipal{
-  display:flex;
-  background-color: antiquewhite;  
+.formPrincipal {
+  display: flex;
+  background-color: antiquewhite;
   width: 90%;
   margin-left: 5%;
   text-align: center;
 }
 
-
-.lupa{
-  width: 6%;
-  padding: 2%;  
+.introText {
+  color: $colorLinks;
+  text-align: center;
+  font-size: x-large;
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.butonWithBgImg{
-  background-color: antiquewhite;  
+.butonWithBgImg {
+  background-color: antiquewhite;
   color: transparent;
   border-style: none;
   padding: 1%;
   background-position-y: center;
   background-position-x: center;
   background-repeat: no-repeat;
-  background-size:50%;
-  background-image:url("https://cdn-icons-png.flaticon.com/512/93/93642.png") ;
+  background-size: 50%;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/93/93642.png");
 }
 
 .mainInputNotBorder {
@@ -56,65 +59,57 @@
   margin-top: 3%;
 }
 
-.subtitle{
-  font-size:1.5em;
+.subtitle {
+  font-size: 1.5em;
   margin-top: 0.5%;
   padding: 0;
 }
 
-
-.likeArticle{
+.likeArticle {
   width: 20px;
 }
 
-.shareImg{
+.shareImg {
   width: 20px;
   background-color: $colorPrincipal;
   padding: 2%;
 }
 
-.shareBtn{
+.shareBtn {
   background-color: $colorPrincipal;
   border-style: none;
 }
 
-
-.btnLike{
+.btnLike {
   background-color: $colorPrincipal;
   border-style: none;
-
 }
 
-.btnLike:hover{
+.btnLike:hover {
   filter: blur(0.1rem);
 }
 
-
-
 /* busquedas */
 
-.searchImg{
+.searchImg {
   width: 60%;
 }
 
-.searchBox{
-  margin:2% 10% 2% 10%;
+.searchBox {
+  margin: 2% 10% 2% 10%;
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
-  h2{
+  h2 {
     margin-bottom: 1%;
   }
 
-  h5{
+  h5 {
     font-size: large;
     margin-top: 0;
     margin-bottom: 0;
   }
-
-  
 }
-

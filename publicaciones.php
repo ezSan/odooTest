@@ -55,7 +55,6 @@ $query = mysqli_query($con, $sql);
         </form>
         <div class="searchBox">
             <?php
-
             if (isset($_GET['enviar'])) {
                 $busqueda = $_GET['busqueda'];
 
@@ -86,15 +85,18 @@ $query = mysqli_query($con, $sql);
 
             <?php
             }
-
-
             ?>
-
-
         </div>
 
 
+
+
+
         <section class="publicaciones">
+
+            <h5 class="introText">En éste blog podrás encontrar información sobre diferntes lugares para hacer trekking
+                de la República Argentina. También podrás ayudarnos a crecer creando tu publicación para otros amantes
+                de la vida al aire libre. </h5>
 
             <?php
             while ($row = mysqli_fetch_array($query)) {
@@ -113,9 +115,6 @@ $query = mysqli_query($con, $sql);
                 echo $row['provincia']
                         ?>
                 </h5>
-
-
-
 
                 <img src="<?php
                 echo substr($row['imagen'], 2)

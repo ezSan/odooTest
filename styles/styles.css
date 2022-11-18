@@ -1,5 +1,6 @@
+@charset "UTF-8";
 body {
-  background-color: #82F1F1;
+  background-color: #b2e4e8;
 }
 
 .styledForm {
@@ -17,15 +18,14 @@ body {
 .formInputNotBorder {
   background-color: antiquewhite;
   border: #808090 0.5px solid;
-  min-width: 298px;
   min-height: 38px;
 }
 
 .loginButton {
   padding: 3%;
   margin: 5%;
-  min-width: 300px;
-  min-height: 40px;
+  /*  min-width: 300px;
+   min-height: 40px; */
   background-color: #F4236C;
   border-style: none;
   color: antiquewhite;
@@ -51,13 +51,12 @@ body {
 
 .footerParagraphLeft {
   color: #63688E;
-  justify-self: flex-start;
+  text-align: center;
   width: 50%;
-  text-align: left;
 }
 
 .footerParagraphRight {
-  color: #F4236C;
+  color: #f4236c;
   justify-self: flex-end;
   width: 50%;
   text-align: center;
@@ -65,6 +64,11 @@ body {
   font-size: large;
 }
 
+@media screen and (max-width: 321px) {
+  .styledForm {
+    width: 80%;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -103,7 +107,7 @@ header {
 }
 
 .closeButton {
-  background-color: #82F1F1;
+  background-color: #b2e4e8;
 }
 
 @media screen and (max-width: 321px) {
@@ -153,9 +157,13 @@ header {
   text-align: center;
 }
 
-.lupa {
-  width: 6%;
-  padding: 2%;
+.introText {
+  color: #63688E;
+  text-align: center;
+  font-size: x-large;
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .butonWithBgImg {
@@ -213,17 +221,17 @@ header {
 
 .shareImg {
   width: 20px;
-  background-color: #82F1F1;
+  background-color: #b2e4e8;
   padding: 2%;
 }
 
 .shareBtn {
-  background-color: #82F1F1;
+  background-color: #b2e4e8;
   border-style: none;
 }
 
 .btnLike {
-  background-color: #82F1F1;
+  background-color: #b2e4e8;
   border-style: none;
 }
 
@@ -308,6 +316,15 @@ header {
   color: black;
   font-weight: 500;
   font-size: medium;
+}
+
+/* Publicacion creada con éxito */
+.createdScreen {
+  width: 60%;
+  margin: 10% 20% 10% 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
